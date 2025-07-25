@@ -42,11 +42,12 @@ if __name__ == '__main__':
     time_steps = 252 * horizon_years
     sims = 5000
 
-    # simulations = generate_gbm_price_series(start_price, mu, sigma, horizon_years, time_steps, sims)
-    # print(simulations)
+    simulations = generate_gbm_price_series(start_price, mu, sigma, horizon_years, time_steps, sims)
+    print(simulations)
+    simulations
 
-    # plt.plot(simulations)
-    # plt.show()
+    plt.plot(simulations)
+    plt.show()
 
     start_date = datetime.strptime('2025-01-01 09:00:00', '%Y-%m-%d %H:%M:%S')
     end_date = datetime.strptime('2025-01-31 17:00:00', '%Y-%m-%d %H:%M:%S')
