@@ -50,6 +50,11 @@ print(np.linalg.eig(C))
 pass
 
 
-np.cumprod(arr, axis=0)
+# np.cumprod(arr, axis=0)
 
-slicing
+# slicing [:,:]
+
+# arr = np.array(lst2)          
+# print(arr.shape)   # (3, 3)    → tuple of dimensions
+# print(arr.ndim)    # 2         → number of axes
+# print(arr.size)    # 9         → total number of elements
